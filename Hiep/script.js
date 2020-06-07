@@ -1,6 +1,6 @@
-const data = [[1, 'one'], [2, 'two'],
-              [3, 'three'], [4, 'four'],
-              [5, 'five'], [6, 'six'],
+const data = [['1', 'one'], ['2', 'two'],
+              ['3', 'three'], ['4', 'four'],
+              ['5', 'five'], ['6', 'six'],
               [7, 'seven'], [8, 'eight'],
               [9, 'nine'], [10, 'ten'],
               [11, 'eleven'], [12, 'twelfth'],
@@ -17,7 +17,7 @@ let wordIndex = [];
 while(wordIndex.length < 6){
     let temp = Math.floor(Math.random() * 20);
     if(wordIndex.includes(temp)== false){
-        wordIndex.push(temp)
+        wordIndex.push(temp);
     }
 }
 console.log(wordIndex);
