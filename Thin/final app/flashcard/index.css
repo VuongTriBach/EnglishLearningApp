@@ -1,0 +1,117 @@
+body {
+	font-family: "Open Sans";
+	background-color: whitesmoke;
+}
+
+#start {
+    background-image: url(./images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 14px 20px;
+    transition: font-weight 0.15s, color 0.15s;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+    color: white;
+    font-weight: bolder;
+}
+
+h2 {
+    margin: 100px;
+    text-align: center;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 32px;
+	
+	border: none;
+    background-color: #b3b3b3;
+    color: black;
+    text-align: center center;
+    display: inline-block;
+    font-size: 16px;
+	
+	cursor: pointer;
+}
+
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.button:hover {
+    background-color: #d3d3d3;
+}
+
+#card {
+    width: 400px;
+    height: 150px;
+    border-radius: 25px 25px 25px 25px;
+
+    cursor: pointer;
+
+    color: black;
+    text-align: center;
+    font-size: 40px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	
+	transition: background-color 0.5s;
+}
+
+.faceFront {
+    background: rgb(133, 227, 255);
+}
+
+.faceBack {
+    background: rgb(255, 209, 139);
+}

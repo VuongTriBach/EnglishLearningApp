@@ -1,0 +1,71 @@
+/* #lyric{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2rem;
+} */
+
+#start {
+    background-image: url(./images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+/* Header/logo Title */
+.header-text {
+    padding: 80px;
+    text-align: center;
+    color: white;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 14px 20px;
+    transition: font-weight 0.15s, color 0.15s;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+    color: white;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    background-color: coral;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+}
