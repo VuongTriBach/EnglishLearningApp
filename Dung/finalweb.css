@@ -1,0 +1,60 @@
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    row-gap: 30px;
+    justify-content: space-arounda;
+   
+    
+}
+.box{
+    width: 100px;
+    height:100px;
+    background-color:whitesmoke;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    color:black;
+    
+    
+}
+.box:hover{
+    background-color:grey;
+    box-shadow: 5px 10px;
+}
+body{
+    
+    background-image: url(https://i.pinimg.com/564x/f0/b5/12/f0b512f52e5ee6424c66861d2b1f11e1.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+#demo{
+     color:black;
+     font-weight: 1000;
+     font-size: 18px;
+     font-family: Tahoma; 
+     text-align: center;
+    
+     padding-top: 20px;
+    
+
+}
+
+.clock{
+    color:red;
+    font-size: xx-large;
+    justify-content: center;
+    margin-left: 600px;
+    padding-bottom: 20px;
+   
+    
+    
+}
+
